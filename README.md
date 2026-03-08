@@ -1,27 +1,59 @@
-# 🎮 배틀글라운드
-<div align="center">
-  <img alt="image" src="https://github.com/user-attachments/assets/4d8ae5d3-f74d-497c-9280-cae426d67d1d" width="45%"/>
-  <img alt="image" src="https://github.com/user-attachments/assets/3c97dad2-e30a-4efa-b749-15f5156756dd" width="45%"/>
-</div>
+# QUIPU Web Game
 
-**실시간으로 타자 대결을 펼치는 멀티플레이어 웹게임**입니다.  
-플레이어들은 **방을 생성하거나 입장하여 최대 3명이 한 단어장을 두고 경쟁**하며, 가장 빠르고 정확하게 입력한 플레이어가 단어를 차지하는 방식으로 진행됩니다.  
+서울시립대학교 컴퓨터 학술 중앙동아리 QUIPU의 실시간 멀티플레이 타자 게임 프로젝트입니다.  
+사용자는 게임 방에 입장해 단어 입력 속도와 정확도로 경쟁할 수 있습니다.
 
-## 🌟 주요 기능
+## Table of Contents
 
-- **멀티플레이어 실시간 타자 대결** (최대 3인)  
-- **방 생성 및 참가 기능**
-- **방 내에서 실기산 채팅 기능**
-- **실시간 단어 점유 시스템**
-- **방 내 등수 및 전체 Top10 등수 표시**
+- [Overview](#overview)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Development Timeline](#development-timeline)
+- [Getting Started](#getting-started)
 
-## 🛠 기술 스택
+## Overview
 
-- **프론트엔드**: React, socket.io-client
-- **백엔드**: Express, MySQL, TypeScript, socket.io
+본 프로젝트는 웹 기반 실시간 타자 대결 서비스를 제공하기 위해 개발되었습니다.  
+프론트엔드는 React 기반 클라이언트로 구성되며, 백엔드는 Express와 Socket.IO 서버로 동작합니다.  
+플레이어는 로비에서 방을 생성하거나 참여하고, 게임 진행 중 채팅과 점수 현황을 확인할 수 있습니다.
 
-## 📅 개발 일정
+## Features
 
-| 프로젝트 | 개발 기간 |
-|----------|----------|
-| 배틀글라운드 | 2024.07 - 2024.08 |
+- 최대 3인 실시간 멀티플레이 타자 대결
+- 게임 방 생성, 입장, 대기 기능
+- 게임 중 실시간 채팅 및 진행 상태 동기화
+- 단어 입력 결과 기반 점수 집계 및 순위 표시
+- 게임 종료 화면에서 결과 확인
+
+## Tech Stack
+
+- Frontend: React
+- Backend: Express, Socket.IO
+- Database: MySQL
+
+## Development Timeline
+
+| Project | Period |
+|---|---|
+| Web Game | 2024.07 - 2024.08 |
+
+## Getting Started
+
+### Install
+
+```bash
+cd frontend && npm install
+cd ../backend && npm install
+```
+
+### Run
+
+```bash
+# backend
+cd backend
+npm start
+
+# frontend
+cd ../frontend
+npm start
+```
